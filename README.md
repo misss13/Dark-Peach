@@ -1,14 +1,14 @@
 # D a r k - P e a c h - P i n k - R i c e
 ✨ Pinki peach gentoo rice, and some utils to next install ✨
 
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629895575.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629831722.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629832546.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629832858.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629833142.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629833395.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629833412.jpeg)
-![alt text](https://github.com/misss13/Dark-Peach/tree/main/Mniam/photo1629895822.jpeg)
+![alt text](/Mniam/photo1629895575.jpeg)
+![alt text](/Mniam/photo1629831722.jpeg)
+![alt text](/Mniam/photo1629832546.jpeg)
+![alt text](/Mniam/photo1629832858.jpeg)
+![alt text](/Mniam/photo1629833142.jpeg)
+![alt text](/Mniam/photo1629833395.jpeg)
+![alt text](/Mniam/photo1629833412.jpeg)
+![alt text](/Mniam/photo1629895822.jpeg)
 
 - shell: zsh + oh-my-zsh https://github.com/ohmyzsh/ohmyzsh
 - wm: i3-gaps + i3-radius
