@@ -1,0 +1,86 @@
+# ██████╗ ███████╗███╗   ██╗████████╗ ██████╗ ██╗    ██╗ ██████╗ 
+#██╔════╝ ██╔════╝████╗  ██║╚══██╔══╝██╔═══██╗██║    ██║██╔═══██╗
+#██║  ███╗█████╗  ██╔██╗ ██║   ██║   ██║   ██║██║ █╗ ██║██║   ██║
+#██║   ██║██╔══╝  ██║╚██╗██║   ██║   ██║   ██║██║███╗██║██║   ██║
+#╚██████╔╝███████╗██║ ╚████║   ██║   ╚██████╔╝╚███╔███╔╝╚██████╔╝
+# ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝  ╚══╝╚══╝  ╚═════╝ 
+#                                                                by Balalaika https://github.com/misss13
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#432222"
+
+# Main text color
+theme[main_fg]="#ed7373"
+
+# Title color for boxes
+theme[title]="#f96161"
+
+# Higlight color for keyboard shortcuts
+theme[hi_fg]="#ff3c79"
+
+# Background color of selected items
+theme[selected_bg]="#8e2e2e"
+
+# Foreground color of selected items
+theme[selected_fg]="#ff86a3"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#834152"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#f93a3a"
+
+# Cpu box outline color
+theme[cpu_box]="#f98361"
+
+# Memory/disks box outline color
+theme[mem_box]="#f98361"
+
+# Net up/down box outline color
+theme[net_box]="#f98361"
+
+# Processes box outline color
+theme[proc_box]="#f98361"
+
+# Box divider line and small boxes line color
+theme[div_line]="#f98361"
+
+# Temperature graph colors
+theme[temp_start]="#72043d"
+theme[temp_mid]="#72213c"
+theme[temp_end]="#c02d67"
+
+# CPU graph colors
+theme[cpu_start]="#f93a3a"
+theme[cpu_mid]="#f98361"
+theme[cpu_end]="#f99977"
+
+# Mem/Disk free meter
+theme[free_start]="#f98b8b"
+theme[free_mid]="ed7373"
+theme[free_end]="#f96161"
+
+# Mem/Disk cached meter
+theme[cached_start]="#458588"
+theme[cached_mid]=""
+theme[cached_end]="#83a598"
+
+# Mem/Disk available meter
+theme[available_start]="#c02d67"
+theme[available_mid]=""
+theme[available_end]="#72213c"
+
+# Mem/Disk used meter
+theme[used_start]="#813b3b"
+theme[used_mid]=""
+theme[used_end]="#8e2e2e"
+
+# Download graph colors
+theme[download_start]="#ff3c79"
+theme[download_mid]="#f96161"
+theme[download_end]="#f98b8b"
+
+# Upload graph colors
+theme[upload_start]="#ff3c79"
+theme[upload_mid]="#f96161"
+theme[upload_end]="#f98b8b"
