@@ -29,3 +29,4 @@
 - cursor: Oreo_pink_cursors
 - xlock + xautolock
 - scripts: to maitaining battery, and lockscreen after 15min
+- bashtop: custom theme
