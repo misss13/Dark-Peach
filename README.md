@@ -1,5 +1,8 @@
 # D a r k - P e a c h - P i n k - R i c e
 ✨ Pinki peach gentoo rice, and some utils to next install ✨
+working on:
+- gentoo
+- arch linux
 
 ![alt text](/Mniam/photo1629895575.jpeg)
 ![alt text](/Mniam/photo1629831722.jpeg)
