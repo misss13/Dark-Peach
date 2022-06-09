@@ -1,0 +1,180 @@
+{
+  "version": "1.11.4",
+  "squares": [
+    {
+      "name": "media",
+      "links": [
+        {
+          "name": "UnixPorn",
+          "url": "https://www.reddit.com/r/unixporn/"
+        },
+        {
+          "name": "Rotten",
+          "url": "https://www.rottentomatoes.com/"
+        },
+        {
+          "name": "Yts",
+          "url": "https://yts.mx/"
+        },
+        {
+          "name": "Based",
+          "url": "https://web.telegram.org/"
+        }
+      ]
+    },
+    {
+      "name": "animu",
+      "links": [
+        {
+          "name": "Imgur",
+          "url": "http://imgur.com/"
+        },
+        {
+          "name": "AniList",
+          "url": "https://anilist.co/home"
+        },
+        {
+          "name": "AMQ",
+          "url": "https://animemusicquiz.com/"
+        },
+        {
+          "name": "Wcostream",
+          "url": "https://www.wcostream.com/"
+        },
+        {
+          "name": "9anime",
+          "url": "https://9anime.to/"
+        },
+        {
+          "name": "Nya",
+          "url": "https://nyaa.si/"
+        }
+      ]
+    },
+    {
+      "name": "programming",
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/"
+        },
+        {
+          "name": "cppreference",
+          "url": "http://en.cppreference.com/w/"
+        },
+        {
+          "name": "vimstuff",
+          "url": "https://vimawesome.com/"
+        },
+        {
+          "name": "/g",
+          "url": "http://boards.4channel.org/g/"
+        },
+        {
+          "name": "TrzyDe",
+          "url": "http://boards.4channel.org/3/"
+        }
+      ]
+    },
+    {
+      "name": "stuff",
+      "links": [
+        {
+          "name": "USE",
+          "url": "https://www.gentoo.org/support/use-flags/"
+        },
+        {
+          "name": "Gentowo",
+          "url": "https://wiki.installgentoo.com/index.php/Main_Page"
+        },
+        {
+          "name": "Portswigger",
+          "url": "https://portswigger.net"
+        },
+        {
+          "name": "Wallpapers",
+          "url": "https://wallpaperscraft.com/"
+        },
+        {
+          "name": "Studbaza",
+          "url": "https://studbaza.pl/AGH-Cyber"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://sylabusy.agh.edu.pl/pl/1/2/17/1/4/4/113"
+        },
+        {
+          "name": "Package",
+          "url": "https://packages.gentoo.org/"
+        }
+      ]
+    },
+    {
+      "name": "warez & online",
+      "links": [
+        {
+          "name": "pdfki",
+          "url": "http://pdf-giant.com/"
+        },
+        {
+          "name": "gry",
+          "url": "http://fitgirl-repacks.site/"
+        },
+        {
+          "name": "filmesy",
+          "url": "https://ololo.to/"
+        },
+        {
+          "name": "all",
+          "url": "https://www.ddlvalley.me/"
+        },
+        {
+          "name": "filmesy HD",
+          "url": "https://flixgo.biz/"
+        },
+        {
+          "name": "fil",
+          "url": "http://filechef.com/"
+        },
+        {
+          "name": "lump",
+          "url": "https://lumpysoft.com/"
+        }
+      ]
+    }
+  ],
+  "bool": {
+    "borders": false,
+    "alwaysopen": true,
+    "background_image": true,
+    "hide_gear_button": true
+  },
+  "style": {
+    "square_size": "160px",
+    "square_spacing": "20px",
+    "heading_font": "Inconsolata for Powerline",
+    "link_font": "Inconsolata for Powerline",
+    "heading_font_size": "15px",
+    "link_font_size": "13px",
+    "background": "#432222",
+    "foreground": "#432222",
+    "heading_color": "#f0a890",
+    "link_color": "#f98b8b",
+    "border_color": "#e4756b",
+    "border_width_normal": "0",
+    "border_width_hovered": "0",
+    "border_radius": "7px",
+    "square_shadow": "0",
+    "focus_color": "#e4756b",
+    "focus_bg_color": "#454757",
+    "search_color": "#c1cadd",
+    "search_bg_color": "#f99595"
+  },
+  "ext": {
+    "images": [
+      "https://images.wallpaperscraft.com/image/smoke_pink_shroud_115937_3840x2160.jpg"
+    ],
+    "size": "cover",
+    "filter": "opacity(0.25) grayscale(0)"
+  }
+}

@@ -1,0 +1,61 @@
+window:
+  padding:
+    x: 26
+    y: 26
+  decorations: none
+  opacity: 0.9
+  gtk_theme_variant: dark
+scrolling:
+  history: 10000
+font:
+  normal:
+    family: "Inconsolata for Powerline"
+  size: 12
+  offset:
+    x: 0
+  glyph_offset:
+    y: 1
+
+  use_thin_strokes: false
+
+draw_bold_text_with_bright_colors: true
+live_config_reload: true
+colors:
+  # Default colors
+  primary:
+    background: '0x432222'
+    foreground: '0xff3c79'
+
+  # Normal colors
+  normal:
+    black:   '0x72043d'
+    red:     '0x72213c'
+    green:   '0x834152'
+    yellow:  '0xb62b6e'
+    blue:    '0x8e2e2e'
+    magenta: '0x813b3b'
+    cyan:    '0xf98b8b'
+    white:   '0xff86a3'
+
+  # Bright colors
+  bright:
+    black:   '0xc02d67'
+    red:     '0xc0502d'
+    green:   '0xf98361'
+    yellow:  '0xf93a3a'
+    blue:    '0xf99977'
+    magenta: '0xed7373'
+    cyan:    '0xf96161'
+    white:   '0xfc698a'
+bell:
+  animation: EaseOutCubic
+  duration: 100
+  color: '#432222'
+
+selection:
+  save_to_clipboard: true
+cursor:
+  style:
+    shape: Block
+    blinking: On
+  unfocused_hollow: true

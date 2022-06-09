@@ -1,0 +1,44 @@
+[global]
+font = "Terminus 8"
+follow = mouse
+geometry           = "0x0-42-42"
+separator_height   = 5
+padding            = 2
+horizontal_padding = 2
+frame_width        = 0
+
+height = 200
+width = 200
+alignment = center
+origin = top-right
+offset = 11x36
+#transparency = 50
+
+markup           = full
+format           = "<b>%s</b>\n%b"
+icon_path        = ""
+icon_position    = left
+max_icon_size    = 128
+show_indicators  = false
+separator_color  = frame
+
+[urgency_low]
+timeout = 4
+background = "#141c21"
+foreground = "#ffffff"
+frame_color = "#f99c9c"
+
+[urgency_normal]
+timeout = 8
+background = "#141c21"
+foreground = "#ffffff"
+frame_color = "#f99c9c"
+
+[urgency_critical]
+timeout = 0
+background = "#141c21"
+foreground = "#ffffff"
+frame_color = "#ff7043"
+
+
+nto = 3

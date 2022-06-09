@@ -1,0 +1,15 @@
+/* colors */
+
+* {
+  al:   #00000000; //NIEZMIENIAJ
+  bg:   #431a1a; //#263238BF; //tlo
+  bga:  #581f1f; //#263238FF; // podswietlenie kafelka
+  fg:   #F99C9C; //#CD2E2E; //#DFDFDFFF; //kolor czcionki programow
+  ac:   #F96161; //#00BCD4FF; //kolor naglowka
+  se:   #F99C9C; //#00BCD41A; //nwm
+
+  bg1:   #FFAB91FF;
+  bg2:   #F96161; //#FF8A65FF;
+  bg3:   #FF7043FF;
+  bar:   #CD2E2E;
+}

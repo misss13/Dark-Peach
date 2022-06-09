@@ -7,12 +7,21 @@
 #general
 set $mod Mod4
 font pango:Inconsolata for Powerline 10
-exec_always feh --bg-fill ~/Obrazy/Tapety/current.jpg
+
+#startup aplikacje
+exec --no-startup-id restart
+exec_always ~/.config/skrypty/tapeta.sh
 exec_always setxkbmap pl
 exec_always --no-startup-id ~/.config/polybar/shapes/launch.sh
 exec_always --no-startup-id scripts
-exec_always compton
+exec_always picom --experimental-backends
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xset +fp ~/.fonts/misc 
+exec_always fc-cache -fv
+exec_always xrdb -merge ~/.Xresources
+exec --no-startup-id syncthing --no-browser
+exec --no-startup-id ~/.config/skrypty/test.sh
+exec --no-startup-id ~/.config/skrypty/battery_main.sh
 
 #volume
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -21,23 +30,30 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-#brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+#brightness KURWIE NA SYSTEMD
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
-#printscreen
-bindsym --release Print exec maim -usb 0 | xclip -selection clip -t image/png
+#printscreen - windows corrupted
+#bindsym --release Print exec maim -usb 0 | xclip -selection clip -t image/png
+bindsym --release $mod+Shift+s exec maim -usb 0 | xclip -selection clip -t image/png
 
 #i3-lock
-#bindsym $mod+x exec i3lock -ui ~/Obrazy/Tapety/pin_loc.png
-bindsym $mod+x exec ~/.config/skrypciki/lock.sh
-exec xautolock -time 15 -locker ~/.config/skrypciki/lock.sh
+bindsym $mod+x exec ~/.config/skrypty/lock.sh
+#exec xautolock -time 15 -locker ~/.config/skrypciki/lock.sh
 
 # Use Mouse+$mod to drag floating windows to other  position
 floating_modifier $mod
 
+# special keys
+bindsym XF86AudioPlay exec spotifyctl -q playpause
+bindsym XF86HomePage exec ~/.config/skrypty/home.sh
+bindsym XF86Mail exec firefox https://mail.google.com/mail/u/0/\#inbox\?compose\=new
+
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -115,13 +131,26 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# reload the configuration file, upgrade
+# pin to workspace
+exec --no-startup-id i3-msg 'workspace $ws5; exec spotify '
+for_window [class="Spotify"] move to workspace $ws5
+for_window [class="KeePassXC"] move to workspace $ws8
+for_window [class="firefox"] move to workspace $ws2
+
+#plywajace okna
+for_window [class="PacketTracer" title="Cisco Packet Tracer"] floating enable resize set 1343 725
+for_window [class="PacketTracer" title="Cisco Packet Tracer"]  move position 10 35 
+for_window [class="PacketTracer" title="R*"] floating enable
+for_window [class="PacketTracer" title="P*"] floating enable
+for_window [class="PacketTracer" title="S*"] floating enable
+for_window [class="PacketTracer" title="N*"] floating enable
+
 bindsym $mod+Shift+c reload
 
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec  ~/.config/polybar/shapes/scripts/powermenu.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -148,7 +177,6 @@ client.urgent           #F95050 #F95050 #F95050 #F95050   #F95050
 client.placeholder      #F98361 #F98361 #F98361 #F98361   #F98361
 client.background       #FFFFFF
 
-
 #grubosc obramowania
 for_window [class="^.*"] border pixel 0
 new_window 1pixel
@@ -160,4 +188,4 @@ gaps outer 1
 #i3-radius
 smart_borders on
 smart_borders no_gaps
-border_radius 3
+border_radius 4
