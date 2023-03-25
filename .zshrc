@@ -8,7 +8,7 @@ export ZSH="/home/balalaika/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="taki"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,7 +105,30 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #LOCAL VARIABLES
+
+#tabowanie
+i3-gui(){
+    # Create tabbed container.
+    i3-msg split v > /dev/null
+    i3-msg layout tabbed > /dev/null
+
+    # Run program.
+    $@
+
+    # Remove container.
+    i3-msg move up > /dev/null
+    i3-msg move down > /dev/null
+}
+# Aliases for programs with a gui.
+alias feh="i3-gui feh"
+alias gimp="i3-gui gimp"
+alias mpv="i3-gui mpv --hwdec=auto"
+alias manga-cli="i3-gui manga-cli"
+alias zathura="i3-gui zathura"
+alias libreoffice="i3-gui libreoffice"
+
 #Alias
 alias sudo="doas"
 alias szukaj="find / -name $1 2>/dev/null"
 alias szukaj_ps="ps -aux | grep $1"
+#alias mpv='mpv  --hwdec=auto'
